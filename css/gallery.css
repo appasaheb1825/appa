@@ -1,0 +1,113 @@
+*{
+	padding: 0;
+	margin: 0;
+  box-sizing: border-box;
+   
+}
+.topnav {
+  overflow: hidden;
+  background-color: #0c2461;
+  
+}
+
+.topnav a{
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px 14px;
+  text-decoration: none;
+  font-size: 13px;
+
+}
+.topnav-right a{
+	list-style: none;
+	display: inline-block;
+}
+
+.topnav-right a:hover {
+  background-color: skyblue;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: red;
+  color: white;
+}
+
+.topnav-right {
+  float: right;
+}
+.topnav img{
+	width:60px;
+}
+
+
+
+
+.abt h1{
+  margin-top: 60px;
+}
+.centered{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+#sec2{
+
+  padding-top: 30px;
+}
+
+.gall{
+  border: 1px solid #ccc;
+  background: #2f3542;
+
+}
+.gall img{
+  width: 100%;
+  height: auto;
+  padding-top: 15px;
+}
+.des{
+  padding: 15px;
+  text-align: center;
+  color: #fff;
+}
+.resp{
+  padding: 4px 6px;
+  float: left;
+  width: 50%;
+}
+@media only screen and (max-width: 700px){
+  .resp{
+    width: 100%;
+
+  }
+}
+
+
+/*----Footer-------*/
+.ic{
+  float: right;
+  text-align: center;
+}
+.lg img{
+  float: left;
+  padding: 12px 14px;
+width: 70px;}
+
+  .lg{
+    float: left;
+    width: 200px;
+      padding: 2px 4px;
+
+  }
+  .lg a{
+    float: left;
+    width: 200px;
+      padding: 2px 4px;
+
+  }
+
+

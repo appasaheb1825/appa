@@ -1,0 +1,306 @@
+*{
+	padding: 0;
+	margin: 0;
+  box-sizing: border-box;
+  font-family: "montserrat",sans-serif;
+   
+}
+.topnav {
+  overflow: hidden;
+  background-color: #0c2461;
+  
+}
+
+.topnav a{
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px 14px;
+  text-decoration: none;
+  font-size: 13px;
+
+}
+.topnav-right a{
+	list-style: none;
+	display: inline-block;
+}
+
+.topnav-right a:hover {
+  background-color: skyblue;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: red;
+  color: white;
+}
+
+.topnav-right {
+  float: right;
+}
+.topnav img{
+	width:60px;
+}
+
+.abt h1{
+  margin-top: 30px;
+}
+.abt img{
+  padding-top: 60px;
+  width: 100%;
+}
+.centered{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+
+/*-----Sevice info------*/
+
+
+#sect{
+  background: #C9F0DF;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-info{
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+.card3{
+  background: #2f3542;
+  padding: 0 20px;
+  margin: 0 10px;
+  width: calc(33% - 20px);
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+}
+.card-icon{
+  font-size: 40px;
+  background: #ff6348;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px!important;
+  border-radius: 50%;
+  transition: 0.3s linear;
+}
+.card3:hover .card-icon{
+  background: none;
+  color: #ff6348;
+  transform: scale(1.6);
+}
+.card3 h3{
+  margin-top: 20px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  max-height: 0;
+  opacity: 0;
+  transition: 0.3s linear;
+}
+.card3:hover h3{
+  max-height: 40px;
+  opacity: 1;
+}
+.card3 p{
+  margin-top: 20px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  max-height: 0;
+  opacity: 0;
+  transition: 0.3s linear;
+}
+.card3:hover p{
+  max-height: 40px;
+  opacity: 1;
+}
+@media screen and (max-width: 800px){
+  .service-info{
+    flex-direction: column;
+  }
+  .card3{
+    width: 100%;
+    max-width: 300px;
+    margin: 10px 0;
+  }
+}
+
+
+#tot{
+    background: #16382c;
+    padding-bottom: 10px;
+  }
+#tot h2{
+  text-align: center;
+  color: #fff;
+  font-size: 60px;
+  padding-top: 20px;
+}
+
+
+/*--------Total service---------*/
+
+
+#sec
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #16382c;
+
+}
+.container5
+{
+  position: relative;
+  width: 1500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+.container5 .card5{
+  position: relative;
+  max-width: 300px;
+  height: 215px;
+  background: #fff;
+  margin: 30px 10px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+  transition: 0.3s ease-in-out;
+
+}
+.container5 .card5:hover{
+  height: 300px;
+}
+.container5 .card5 .imgBx {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  top: -5%;
+  left: 20px;
+  z-index: 1;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+
+
+} 
+.container5 .card5 .imgBx img{
+  max-width: 100%;
+  border-radius: 4px;
+}
+.container5 .card5 .content5{
+  position: relative;
+  margin-top: -140px;
+  padding: 10px 15px;
+  text-align: center;
+  color: #111;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+
+}
+.container5 .card5:hover .content5{
+  visibility: visible;
+  opacity: 1;
+  margin-top: -40px;
+  transition-delay: 0.3s;
+}
+
+/*-----Review----*/
+
+#section-6{
+  background: #8c7ae6;
+}
+.wrapper{
+  text-align: center;
+  padding-bottom: 20px;
+}
+.wrapper h1{
+
+font-size: 48px;
+color: #fff;
+margin-bottom: 25px;
+}
+.wrapper .our_review{
+  display: flex;
+  width: auto;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.wrapper .our_review .team_img{
+  width: 250px;
+  margin: 10px;
+  background: #fff;
+  padding: 20px ;
+}
+.wrapper .our_review .team_img .member_img{
+  background: #e9effa;
+  max-width: 190px;
+  margin: 0 auto;
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+  position: relative;
+}
+.wrapper .our_review .team_img .member_img img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.wrapper .our_review .team_img .member_img h3{
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  margin: 15px 0 0;
+}
+.wrapper .our_review .team_img .member_img span{
+  font-size: 10px;
+
+}
+.wrapper .our_review .team_img .member_img p{
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+
+/*------Footer-----*/
+.ic{
+  float: right;
+  text-align: center;
+}
+.lg img{
+  float: left;
+  padding: 12px 14px;
+width: 70px;}
+
+  .lg{
+    float: left;
+    width: 200px;
+      padding: 2px 4px;
+
+  }
+  .lg a{
+    float: left;
+    width: 200px;
+      padding: 2px 4px;
+
+  }
+
