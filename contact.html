@@ -1,25 +1,4 @@
-<?php
-$host = "localhost";
-$user = "root" ;
-$password = "";
-$db = "appa" ;
-$conn= mysqli_connect($host, $user, $password, $db);
 
-
-if(isset($_POST[ 'submit']))
-{ 
-  $message = $_POST['message'];
-  $firstname = $_POST['firstname'];
-  $lastname = $_POST['lastname'];
-  $email = $_POST['email'];
-  $subject = $_POST['subject'];
-  $query = "insert into contact( message, firstname,lastname, email, subject) values('$message','$firstname','$lastname',
-  '$email','$subject')";
-
-
-$result=mysqli_query($conn, $query);
-}
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -47,10 +26,10 @@ $result=mysqli_query($conn, $query);
 </div>
 
   <div class="topnav-right">
-<a href="index.php">Home</a>    
-<a href="about.php">About</a>
-<a href="services.php">Services</a>
-<a href="gallery.php">Gallery</a>
+<a href="index.html">Home</a>    
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="gallery.html">Gallery</a>
 <a class="active" href="#">Contact</a>
 
   </div>
@@ -85,7 +64,7 @@ $result=mysqli_query($conn, $query);
 			
 			<!-----first grid section ----->
 			<div>
-				<form action="#" method="POST">
+				<form action="insert.php" method="POST">
 					<textarea placeholder="Message" rows="5"  name="message" required></textarea>
 					<input type="text" placeholder="FirstName"  name="firstname" required>
 					<input type="text" placeholder="LastName"  name="lastname" required>

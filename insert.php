@@ -3,7 +3,7 @@ $host = "localhost";
 $user = "root" ;
 $password = "";
 $db = "appa" ;
-$conn= mysqli_connect($host,$user,$password,$db );
+$conn= mysqli_connect($host, $user, $password, $db);
 
 
 if(isset($_POST[ 'submit']))
@@ -13,13 +13,12 @@ if(isset($_POST[ 'submit']))
   $lastname = $_POST['lastname'];
   $email = $_POST['email'];
   $subject = $_POST['subject'];
-  $query = "insert into contact( message, firstname,lastname, email, subject) values ('$message','$firstname','lastname',' $email',' $subject')";
+  $query = "insert into contact( message, firstname,lastname, email, subject) values('$message','$firstname','$lastname',
+  '$email','$subject')";
 
 
 $result=mysqli_query($conn, $query);
-
 }
-
 ?>
 
 
